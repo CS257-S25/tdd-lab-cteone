@@ -14,7 +14,7 @@ def reverse_word(word):
 def reverse_all_words(phrase):
     """Reverses each word in a phrase"""
     words = phrase.split(" ")
-    new_words = map(lambda word: reverse_word(word), words)
+    new_words = map(reverse_word, words)
     return " ".join(new_words)
 
 
